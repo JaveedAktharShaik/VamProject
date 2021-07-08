@@ -8,7 +8,7 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwowayBindingComponent } from './twoway-binding/twoway-binding.component';
 import { StructDirectivesComponent } from './struct-directives/struct-directives.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ProductComponent } from './product/product.component';
 import { AttributeDirsComponent } from './attribute-dirs/attribute-dirs.component';
@@ -27,6 +27,8 @@ import { Component1Component } from './component1/component1.component';
 import { Component2Component } from './component2/component2.component';
 import { JavacompComponent } from './javacomp/javacomp.component';
 import { WebcompComponent } from './webcomp/webcomp.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
+import { ModelDrivenComponent } from './model-driven/model-driven.component';
 
 @NgModule({
   declarations: [
@@ -54,9 +56,11 @@ import { WebcompComponent } from './webcomp/webcomp.component';
     Component2Component,
     JavacompComponent,
     WebcompComponent,
+    TemplateDrivenComponent,
+    ModelDrivenComponent,
   ],
   imports: [
-    BrowserModule, FormsModule,HttpClientModule,TechRoutingModule
+    BrowserModule, FormsModule,HttpClientModule,TechRoutingModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
