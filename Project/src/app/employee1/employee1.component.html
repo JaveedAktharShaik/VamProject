@@ -17,7 +17,7 @@
             EmployeeSalary
         </th>
     </tr>
-    <tr appMycolor *ngFor="let employee of employees | search:filteredString " >
+    <tr *ngFor="let employee of employee1 | employeepipe:filteredString" >
 
         <td class="bg-dark text-white">
                {{employee.empId}}
@@ -26,7 +26,7 @@
             {{employee.empName}}
      </td>
      <td class="bg-dark text-white">
-        {{employee.salary}}
+        {{employee.empSal}}
  </td>
     </tr>
 </table>

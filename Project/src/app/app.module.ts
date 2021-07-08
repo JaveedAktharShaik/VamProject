@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { Employee1Component } from './employee1/employee1.component';
 import { Employee2Component } from './employee2/employee2.component';
 import { EmployeePipe } from './employee.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EmployeePipe } from './employee.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
